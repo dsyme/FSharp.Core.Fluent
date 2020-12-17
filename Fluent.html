@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Usage examples for all functions
+</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="FSharp.Core.Fluent">
+
+    <link rel="stylesheet" id="theme_link" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FSharp.Core.Fluent/content/navbar-fixed-right.css" />
+    <link type="text/css" rel="stylesheet" href="/FSharp.Core.Fluent/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FSharp.Core.Fluent/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FSharp.Core.Fluent/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary fixed-right" id="fsdocs-menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="/FSharp.Core.Fluent/"><img id="fsdocs-logo" src="/FSharp.Core.Fluent/img/logo.png" /></a>
+            <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+            <div id="header">
+                <div class="searchbox" id="fsdocs-searchbox">
+                    <label for="search-by">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <input data-search-input="" id="search-by" type="search" placeholder="Search..." />
+                    <span data-search-clear="">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- END SEARCH BOX: this adds support for the search box -->
+            <ul class="navbar-nav">
+                <li class="nav-header">Links</li>
+                <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (Apache 2.0)</a></li>
+                <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                <li class="nav-header">
+  Documentation
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FSharp.Core.Fluent/Fluent.html">
+    Usage examples for all functions
+
+  </a>
+</li>
+                <li class="nav-header">
+  API Reference
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FSharp.Core.Fluent/reference/index.html">
+    All Namespaces
+  </a>
+</li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="masthead">
+            <h3 class="muted"><a href="/FSharp.Core.Fluent/">FSharp.Core.Fluent</a></h3>
+        </div>
+        <hr />
+        <div class="container" id="fsdocs-content">
+            <h1><a name="Usage-examples-for-all-functions" class="anchor" href="#Usage-examples-for-all-functions">Usage examples for all functions</a></h1>
+<p>The fluent-style members for all Seq.* operations are shown below. Some additional fluent functions are
+available for Array, these are not shown here.</p>
+<pre class="fssnip highlighted"><code lang="fsharp"><span class="k">open</span> <span onmouseout="hideTip(event, 'fs1', 1)" onmouseover="showTip(event, 'fs1', 1)" class="id">FSharp</span><span class="pn">.</span><span onmouseout="hideTip(event, 'fs2', 2)" onmouseover="showTip(event, 'fs2', 2)" class="id">Core</span><span class="pn">.</span><span class="id">Fluent</span>
+
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs3', 3)" onmouseover="showTip(event, 'fs3', 3)" class="id">seq1</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs4', 4)" onmouseover="showTip(event, 'fs4', 4)" class="k">seq</span> <span class="pn">{</span> <span class="n">1</span> <span class="o">..</span> <span class="n">10</span> <span class="pn">}</span>
+<span class="k">let</span> <span onmouseout="hideTip(event, 'fs5', 5)" onmouseover="showTip(event, 'fs5', 5)" class="id">seq2</span> <span class="o">=</span> <span onmouseout="hideTip(event, 'fs4', 6)" onmouseover="showTip(event, 'fs4', 6)" class="k">seq</span> <span class="pn">{</span> <span class="n">11</span> <span class="o">..</span> <span class="n">20</span> <span class="pn">}</span>
+
+<span onmouseout="hideTip(event, 'fs3', 7)" onmouseover="showTip(event, 'fs3', 7)" class="id">seq1</span><span class="pn">.</span><span class="id">append</span><span class="pn">(</span><span onmouseout="hideTip(event, 'fs5', 8)" onmouseover="showTip(event, 'fs5', 8)" class="id">seq2</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 9)" onmouseover="showTip(event, 'fs3', 9)" class="id">seq1</span><span class="pn">.</span><span class="id">averageBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs6', 10)" onmouseover="showTip(event, 'fs6', 10)" class="id">float</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 11)" onmouseover="showTip(event, 'fs3', 11)" class="id">seq1</span><span class="pn">.</span><span class="id">cache</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 12)" onmouseover="showTip(event, 'fs3', 12)" class="id">seq1</span><span class="pn">.</span><span class="id">choose</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="k">if</span> <span class="id">x</span> <span class="o">%</span> <span class="n">2</span> <span class="o">=</span> <span class="n">0</span> <span class="k">then</span> <span onmouseout="hideTip(event, 'fs7', 13)" onmouseover="showTip(event, 'fs7', 13)" class="id">Some</span> <span class="id">x</span> <span class="k">else</span> <span onmouseout="hideTip(event, 'fs8', 14)" onmouseover="showTip(event, 'fs8', 14)" class="id">None</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 15)" onmouseover="showTip(event, 'fs3', 15)" class="id">seq1</span><span class="pn">.</span><span class="id">collect</span> <span class="pn">(</span><span class="k">fun</span> <span class="id">n</span> <span class="k">-&gt;</span> <span class="pn">[</span> <span class="id">n</span><span class="pn">;</span> <span class="id">n</span> <span class="o">+</span> <span class="n">1</span> <span class="pn">]</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 16)" onmouseover="showTip(event, 'fs3', 16)" class="id">seq1</span><span class="pn">.</span><span class="id">countBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 17)" onmouseover="showTip(event, 'fs3', 17)" class="id">seq1</span><span class="pn">.</span><span class="id">distinct</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 18)" onmouseover="showTip(event, 'fs3', 18)" class="id">seq1</span><span class="pn">.</span><span class="id">distinctBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 19)" onmouseover="showTip(event, 'fs3', 19)" class="id">seq1</span><span class="pn">.</span><span class="id">exactlyOne</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 20)" onmouseover="showTip(event, 'fs3', 20)" class="id">seq1</span><span class="pn">.</span><span class="id">exists</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 21)" onmouseover="showTip(event, 'fs3', 21)" class="id">seq1</span><span class="pn">.</span><span class="id">filter</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 22)" onmouseover="showTip(event, 'fs3', 22)" class="id">seq1</span><span class="pn">.</span><span class="id">find</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 23)" onmouseover="showTip(event, 'fs3', 23)" class="id">seq1</span><span class="pn">.</span><span class="id">findIndex</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 24)" onmouseover="showTip(event, 'fs3', 24)" class="id">seq1</span><span class="pn">.</span><span class="id">tryFind</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 25)" onmouseover="showTip(event, 'fs3', 25)" class="id">seq1</span><span class="pn">.</span><span class="id">tryFindIndex</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 26)" onmouseover="showTip(event, 'fs3', 26)" class="id">seq1</span><span class="pn">.</span><span class="id">tryPick</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs7', 27)" onmouseover="showTip(event, 'fs7', 27)" class="id">Some</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 28)" onmouseover="showTip(event, 'fs3', 28)" class="id">seq1</span><span class="pn">.</span><span class="id">fold</span><span class="pn">(</span><span class="n">3</span><span class="pn">,</span> <span class="k">fun</span> <span class="id">z</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="o">+</span> <span class="id">z</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 29)" onmouseover="showTip(event, 'fs3', 29)" class="id">seq1</span><span class="pn">.</span><span class="id">forall</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 30)" onmouseover="showTip(event, 'fs3', 30)" class="id">seq1</span><span class="pn">.</span><span class="id">groupBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 31)" onmouseover="showTip(event, 'fs3', 31)" class="id">seq1</span><span class="pn">.</span><span class="id">head</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 32)" onmouseover="showTip(event, 'fs3', 32)" class="id">seq1</span><span class="pn">.</span><span class="id">iter</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs9', 33)" onmouseover="showTip(event, 'fs9', 33)" class="id">printfn</span> <span class="s">&quot;%d&quot;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 34)" onmouseover="showTip(event, 'fs3', 34)" class="id">seq1</span><span class="pn">.</span><span class="id">iteri</span><span class="pn">(</span><span class="k">fun</span> <span class="id">i</span> <span class="id">x</span> <span class="k">-&gt;</span>  <span onmouseout="hideTip(event, 'fs9', 35)" onmouseover="showTip(event, 'fs9', 35)" class="id">printfn</span> <span class="s">&quot;%d&quot;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 36)" onmouseover="showTip(event, 'fs3', 36)" class="id">seq1</span><span class="pn">.</span><span class="id">last</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 37)" onmouseover="showTip(event, 'fs3', 37)" class="id">seq1</span><span class="pn">.</span><span class="id">length</span>
+<span onmouseout="hideTip(event, 'fs3', 38)" onmouseover="showTip(event, 'fs3', 38)" class="id">seq1</span><span class="pn">.</span><span class="id">map</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="o">+</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 39)" onmouseover="showTip(event, 'fs3', 39)" class="id">seq1</span><span class="pn">.</span><span class="id">mapi</span><span class="pn">(</span><span class="k">fun</span> <span class="id">i</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="o">+</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 40)" onmouseover="showTip(event, 'fs3', 40)" class="id">seq1</span><span class="pn">.</span><span class="id">max</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 41)" onmouseover="showTip(event, 'fs3', 41)" class="id">seq1</span><span class="pn">.</span><span class="id">maxBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 42)" onmouseover="showTip(event, 'fs3', 42)" class="id">seq1</span><span class="pn">.</span><span class="id">min</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 43)" onmouseover="showTip(event, 'fs3', 43)" class="id">seq1</span><span class="pn">.</span><span class="id">minBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 44)" onmouseover="showTip(event, 'fs3', 44)" class="id">seq1</span><span class="pn">.</span><span class="id">pairwise</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 45)" onmouseover="showTip(event, 'fs3', 45)" class="id">seq1</span><span class="pn">.</span><span class="id">pick</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs7', 46)" onmouseover="showTip(event, 'fs7', 46)" class="id">Some</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 47)" onmouseover="showTip(event, 'fs3', 47)" class="id">seq1</span><span class="pn">.</span><span class="id">readonly</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 48)" onmouseover="showTip(event, 'fs3', 48)" class="id">seq1</span><span class="pn">.</span><span class="id">reduce</span><span class="pn">(</span><span class="o">+</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 49)" onmouseover="showTip(event, 'fs3', 49)" class="id">seq1</span><span class="pn">.</span><span class="id">scan</span><span class="pn">(</span><span class="n">3</span><span class="pn">,</span> <span class="k">fun</span> <span class="id">z</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="o">+</span> <span class="id">z</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 50)" onmouseover="showTip(event, 'fs3', 50)" class="id">seq1</span><span class="pn">.</span><span class="id">skip</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 51)" onmouseover="showTip(event, 'fs3', 51)" class="id">seq1</span><span class="pn">.</span><span class="id">skipWhile</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 52)" onmouseover="showTip(event, 'fs3', 52)" class="id">seq1</span><span class="pn">.</span><span class="id">sort</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 53)" onmouseover="showTip(event, 'fs3', 53)" class="id">seq1</span><span class="pn">.</span><span class="id">sortBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 54)" onmouseover="showTip(event, 'fs3', 54)" class="id">seq1</span><span class="pn">.</span><span class="id">sum</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 55)" onmouseover="showTip(event, 'fs3', 55)" class="id">seq1</span><span class="pn">.</span><span class="id">sumBy</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 56)" onmouseover="showTip(event, 'fs3', 56)" class="id">seq1</span><span class="pn">.</span><span class="id">take</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 57)" onmouseover="showTip(event, 'fs3', 57)" class="id">seq1</span><span class="pn">.</span><span class="id">takeWhile</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 58)" onmouseover="showTip(event, 'fs3', 58)" class="id">seq1</span><span class="pn">.</span><span class="id">toArray</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 59)" onmouseover="showTip(event, 'fs3', 59)" class="id">seq1</span><span class="pn">.</span><span class="id">toList</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 60)" onmouseover="showTip(event, 'fs3', 60)" class="id">seq1</span><span class="pn">.</span><span class="id">toArray</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 61)" onmouseover="showTip(event, 'fs3', 61)" class="id">seq1</span><span class="pn">.</span><span class="id">truncate</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 62)" onmouseover="showTip(event, 'fs3', 62)" class="id">seq1</span><span class="pn">.</span><span class="id">tryFind</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 63)" onmouseover="showTip(event, 'fs3', 63)" class="id">seq1</span><span class="pn">.</span><span class="id">tryFindIndex</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 64)" onmouseover="showTip(event, 'fs3', 64)" class="id">seq1</span><span class="pn">.</span><span class="id">tryPick</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span onmouseout="hideTip(event, 'fs7', 65)" onmouseover="showTip(event, 'fs7', 65)" class="id">Some</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 66)" onmouseover="showTip(event, 'fs3', 66)" class="id">seq1</span><span class="pn">.</span><span class="id">where</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 67)" onmouseover="showTip(event, 'fs3', 67)" class="id">seq1</span><span class="pn">.</span><span class="id">windowed</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 68)" onmouseover="showTip(event, 'fs3', 68)" class="id">seq1</span><span class="pn">.</span><span class="id">zip</span><span class="pn">(</span><span onmouseout="hideTip(event, 'fs5', 69)" onmouseover="showTip(event, 'fs5', 69)" class="id">seq2</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 70)" onmouseover="showTip(event, 'fs3', 70)" class="id">seq1</span><span class="pn">.</span><span class="id">zip3</span><span class="pn">(</span><span onmouseout="hideTip(event, 'fs3', 71)" onmouseover="showTip(event, 'fs3', 71)" class="id">seq1</span><span class="pn">,</span><span onmouseout="hideTip(event, 'fs5', 72)" onmouseover="showTip(event, 'fs5', 72)" class="id">seq2</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 73)" onmouseover="showTip(event, 'fs3', 73)" class="id">seq1</span><span class="pn">.</span><span class="id">contains</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 74)" onmouseover="showTip(event, 'fs3', 74)" class="id">seq1</span><span class="pn">.</span><span class="id">exceptseq2</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 75)" onmouseover="showTip(event, 'fs3', 75)" class="id">seq1</span><span class="pn">.</span><span class="id">permute</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 76)" onmouseover="showTip(event, 'fs3', 76)" class="id">seq1</span><span class="pn">.</span><span class="id">reduceBack</span><span class="pn">(</span><span class="o">+</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 77)" onmouseover="showTip(event, 'fs3', 77)" class="id">seq1</span><span class="pn">.</span><span class="id">foldBack</span><span class="pn">(</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="id">z</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="o">+</span> <span class="id">z</span><span class="pn">)</span><span class="pn">,</span> <span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 78)" onmouseover="showTip(event, 'fs3', 78)" class="id">seq1</span><span class="pn">.</span><span class="id">reverse</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 79)" onmouseover="showTip(event, 'fs3', 79)" class="id">seq1</span><span class="pn">.</span><span class="id">scanBack</span><span class="pn">(</span><span class="pn">(</span><span class="o">+</span><span class="pn">)</span><span class="pn">,</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 80)" onmouseover="showTip(event, 'fs3', 80)" class="id">seq1</span><span class="pn">.</span><span class="id">sortWith</span><span class="pn">(</span><span onmouseout="hideTip(event, 'fs10', 81)" onmouseover="showTip(event, 'fs10', 81)" class="id">compare</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 82)" onmouseover="showTip(event, 'fs3', 82)" class="id">seq1</span><span class="pn">.</span><span class="id">sortDescending</span><span class="pn">(</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 83)" onmouseover="showTip(event, 'fs3', 83)" class="id">seq1</span><span class="pn">.</span><span class="id">chunkBySize</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 84)" onmouseover="showTip(event, 'fs3', 84)" class="id">seq1</span><span class="pn">.</span><span class="id">splitInto</span><span class="pn">(</span><span class="n">3</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 85)" onmouseover="showTip(event, 'fs3', 85)" class="id">seq1</span><span class="pn">.</span><span class="id">tryFindIndexBack</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 86)" onmouseover="showTip(event, 'fs3', 86)" class="id">seq1</span><span class="pn">.</span><span class="id">tryFindBack</span><span class="pn">(</span><span class="k">fun</span> <span class="id">x</span> <span class="k">-&gt;</span> <span class="id">x</span> <span class="pn">&gt;</span> <span class="n">1</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 87)" onmouseover="showTip(event, 'fs3', 87)" class="id">seq1</span><span class="pn">.</span><span class="id">tryItem</span><span class="pn">(</span><span class="n">19</span><span class="pn">)</span>
+<span onmouseout="hideTip(event, 'fs3', 88)" onmouseover="showTip(event, 'fs3', 88)" class="id">seq1</span><span class="pn">.</span><span class="id">tail</span><span class="pn">(</span><span class="pn">)</span>
+</code></pre>
+
+            <div class="fsdocs-tip" id="fs1">namespace Microsoft.FSharp</div>
+<div class="fsdocs-tip" id="fs2">namespace Microsoft.FSharp.Core</div>
+<div class="fsdocs-tip" id="fs3">val seq1 : seq&lt;int&gt;</div>
+<div class="fsdocs-tip" id="fs4">Multiple items<br />val seq : sequence:seq&lt;&#39;T&gt; -&gt; seq&lt;&#39;T&gt;<br /><br />--------------------<br />type seq&lt;&#39;T&gt; = System.Collections.Generic.IEnumerable&lt;&#39;T&gt;</div>
+<div class="fsdocs-tip" id="fs5">val seq2 : seq&lt;int&gt;</div>
+<div class="fsdocs-tip" id="fs6">Multiple items<br />val float : value:&#39;T -&gt; float (requires member op_Explicit)<br /><br />--------------------<br />type float = System.Double<br /><br />--------------------<br />type float&lt;&#39;Measure&gt; = float</div>
+<div class="fsdocs-tip" id="fs7">union case Option.Some: Value: &#39;T -&gt; Option&lt;&#39;T&gt;</div>
+<div class="fsdocs-tip" id="fs8">union case Option.None: Option&lt;&#39;T&gt;</div>
+<div class="fsdocs-tip" id="fs9">val printfn : format:Printf.TextWriterFormat&lt;&#39;T&gt; -&gt; &#39;T</div>
+<div class="fsdocs-tip" id="fs10">val compare : e1:&#39;T -&gt; e2:&#39;T -&gt; int (requires comparison)</div>
+
+        </div>
+
+        <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+        <script type="text/javascript">var fsdocs_search_baseurl = '/FSharp.Core.Fluent/'</script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+        <script type="text/javascript" src="/FSharp.Core.Fluent/content/fsdocs-search.js"></script>
+        <!-- END SEARCH BOX: this adds support for the search box -->
+    </div>
+</body>
+
+</html>
+

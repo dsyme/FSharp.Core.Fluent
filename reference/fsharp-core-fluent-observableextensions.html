@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>ObservableExtensions (FSharp.Core.Fluent)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="FSharp.Core.Fluent">
+
+    <link rel="stylesheet" id="theme_link" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.3.1/materia/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script> -->
+
+    <link type="text/css" rel="stylesheet" href="/FSharp.Core.Fluent/content/navbar-fixed-right.css" />
+    <link type="text/css" rel="stylesheet" href="/FSharp.Core.Fluent/content/fsdocs-default.css" />
+    <link type="text/css" rel="stylesheet" href="/FSharp.Core.Fluent/content/fsdocs-custom.css" />
+    <script type="text/javascript" src="/FSharp.Core.Fluent/content/fsdocs-tips.js"></script>
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+    <!-- END SEARCH BOX: this adds support for the search box -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-secondary fixed-right" id="fsdocs-menu">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <a href="/FSharp.Core.Fluent/"><img id="fsdocs-logo" src="/FSharp.Core.Fluent/img/logo.png" /></a>
+            <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+            <div id="header">
+                <div class="searchbox" id="fsdocs-searchbox">
+                    <label for="search-by">
+                        <i class="fas fa-search"></i>
+                    </label>
+                    <input data-search-input="" id="search-by" type="search" placeholder="Search..." />
+                    <span data-search-clear="">
+                        <i class="fas fa-times"></i>
+                    </span>
+                </div>
+            </div>
+
+            <!-- END SEARCH BOX: this adds support for the search box -->
+            <ul class="navbar-nav">
+                <li class="nav-header">Links</li>
+                <li class="nav-item" id="fsdocs-license-link"><a class="nav-link" href="{{fsdocs-license-link}}">License (Apache 2.0)</a></li>
+                <li class="nav-item" id="fsdocs-release-notes-link"><a class="nav-link" href="{{fsdocs-release-notes-link}}">Release Notes</a></li>
+                <li class="nav-item" id="fsdocs-repository-link"><a class="nav-link" href="{{fsdocs-repository-link}}">Source Repository</a></li>
+                <li class="nav-header">
+  Documentation
+</li>             
+<li class="nav-item">
+  <a class="nav-link" href="/FSharp.Core.Fluent/Fluent.html">
+    Usage examples for all functions
+
+  </a>
+</li>
+                <li class="nav-header">
+  Namespaces
+</li>             
+<li class="nav-item active">
+  <span>
+    <a class="nav-link active" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent.html">
+      FSharp.Core.Fluent
+    </a>
+  </span>
+</li>             
+<ul list-style-type="none">
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-array2dextensions.html">
+      Array2DExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-array3dextensions.html">
+      Array3DExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-array4dextensions.html">
+      Array4DExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-arrayextensions.html">
+      ArrayExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-arrayextensionsconstrained.html">
+      ArrayExtensionsConstrained
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-eventextensions.html">
+      EventExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-listextensions.html">
+      ListExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-listextensionsconstrained.html">
+      ListExtensionsConstrained
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-nativeptrextensions.html">
+      NativePtrExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-nullableextensions.html">
+      NullableExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-observableextensions.html">
+      ObservableExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-optionextensions.html">
+      OptionExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-optionextensionsconstrained.html">
+      OptionExtensionsConstrained
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-seqextensions.html">
+      SeqExtensions
+    </a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/FSharp.Core.Fluent/reference/fsharp-core-fluent-stringextensions.html">
+      StringExtensions
+    </a>
+  </li>
+</ul>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="masthead">
+            <h3 class="muted"><a href="/FSharp.Core.Fluent/">FSharp.Core.Fluent</a></h3>
+        </div>
+        <hr />
+        <div class="container" id="fsdocs-content">
+            <div>
+  <h1>
+    ObservableExtensions Module
+  </h1>
+  <p>
+    Namespace: 
+    <a href="/FSharp.Core.Fluent/reference/fsharp-core-fluent.html">
+      FSharp.Core.Fluent
+    </a>
+  </p>
+  <p>
+    Assembly: FSharp.Core.Fluent.dll
+  </p>
+  <div class="fsdocs-xmldoc">
+    Fluent extension operations on observables.
+  </div>
+  <div></div>
+  <div>
+    <h3>
+      Type extensions
+    </h3>
+    <table class="table outer-list fsdocs-member-list">
+      <thead>
+        <tr>
+          <td class="fsdocs-member-list-header">
+            Type extension
+          </td>
+          <td class="fsdocs-member-list-header">
+            Description
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '166', 166)" onmouseover="showTip(event, '166', 166)">
+                <p>
+                  <a id="add">
+                    <a href="#add">
+                      <code><span>this.add&#32;<span>callback</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="166">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.add&#32;<span>callback</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        callback
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;unit</span></code>
+                       - 
+                      The function to be called on each observation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Creates an observer which permanently subscribes to the given observable and which calls
+ the given function for each observation.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  callback
+                </span>
+                :
+                <code><span>'T&#32;->&#32;unit</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function to be called on each observation.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '167', 167)" onmouseover="showTip(event, '167', 167)">
+                <p>
+                  <a id="choose">
+                    <a href="#choose">
+                      <code><span>this.choose&#32;<span>chooser</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="167">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.choose&#32;<span>chooser</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        chooser
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;<span>'U&#32;option</span></span></code>
+                       - 
+                      The function that returns Some for observations to be propagated
+ and None for observations to ignore.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+                  </span>
+                  An Observable that only propagates some of the observations from the source.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns an observable which chooses a projection of observations from the source 
+ using the given function. The returned object will trigger observations <code>x</code>
+ for which the splitter returns <code>Some x</code>. The returned object also propagates 
+ all errors arising from the source and completes when the source completes.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  chooser
+                </span>
+                :
+                <code><span>'T&#32;->&#32;<span>'U&#32;option</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function that returns Some for observations to be propagated
+ and None for observations to ignore.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An Observable that only propagates some of the observations from the source.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '168', 168)" onmouseover="showTip(event, '168', 168)">
+                <p>
+                  <a id="filter">
+                    <a href="#filter">
+                      <code><span>this.filter&#32;<span>predicate</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="168">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.filter&#32;<span>predicate</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        predicate
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;bool</span></code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></code>
+                  </span>
+                  An Observable that filters observations based on <code>filter</code>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns an observable which filters the observations of the source 
+ by the given function. The observable will see only those observations
+ for which the predicate returns true. The predicate is executed once for 
+ each subscribed observer. The returned object also propagates error 
+ observations arising from the source and completes when the source completes.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  predicate
+                </span>
+                :
+                <code><span>'T&#32;->&#32;bool</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An Observable that filters observations based on <code>filter</code>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '169', 169)" onmouseover="showTip(event, '169', 169)">
+                <p>
+                  <a id="map">
+                    <a href="#map">
+                      <code><span>this.map&#32;<span>mapping</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="169">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.map&#32;<span>mapping</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        mapping
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;'U</span></code>
+                       - 
+                      The function applied to observations from the source.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+                  </span>
+                  An Observable of the type specified by <code>mapping</code>.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns an observable which transforms the observations of the source by the 
+ given function. The transformation function is executed once for each 
+ subscribed observer. The returned object also propagates error observations 
+ arising from the source and completes when the source completes.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  mapping
+                </span>
+                :
+                <code><span>'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function applied to observations from the source.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An Observable of the type specified by <code>mapping</code>.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '170', 170)" onmouseover="showTip(event, '170', 170)">
+                <p>
+                  <a id="merge">
+                    <a href="#merge">
+                      <code><span>this.merge&#32;<span>obs2</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="170">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.merge&#32;<span>obs2</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        obs2
+                      </b>
+                      :
+                      <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></code>
+                       - 
+                      The second Observable.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></code>
+                  </span>
+                  An Observable that propagates information from both sources.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns an observable for the merged observations from the sources. 
+ The returned object propagates success and error values arising 
+ from either source and completes when both the sources have completed.
+            </p>
+            <p class="fsdocs-remarks">
+              For each observer, the registered intermediate observing object is not 
+ thread safe. That is, observations arising from the sources must not 
+ be triggered concurrently on different threads.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  obs2
+                </span>
+                :
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The second Observable.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An Observable that propagates information from both sources.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '171', 171)" onmouseover="showTip(event, '171', 171)">
+                <p>
+                  <a id="pairwise">
+                    <a href="#pairwise">
+                      <code><span>this.pairwise&#32;<span>()</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="171">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.pairwise&#32;<span>()</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        ()
+                      </b>
+                      :
+                      <code>unit</code>
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<span>'T&#32;*&#32;'T</span>&gt;</span></code>
+                  </span>
+                  An Observable that triggers on successive pairs of observations from the input Observable.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns a new observable that triggers on the second and subsequent triggerings of the input observable.
+ The Nth triggering of the input observable passes the arguments from the N-1th and Nth triggering as
+ a pair. The argument passed to the N-1th triggering is held in hidden internal state until the 
+ Nth triggering occurs.
+            </p>
+            <p class="fsdocs-remarks">
+              For each observer, the registered intermediate observing object is not thread safe.
+ That is, observations arising from the source must not be triggered concurrently 
+ on different threads.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  ()
+                </span>
+                :
+                <code>unit</code>
+              </dt>
+              <dd class="fsdocs-param-docs"></dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;<span>'T&#32;*&#32;'T</span>&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An Observable that triggers on successive pairs of observations from the input Observable.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '172', 172)" onmouseover="showTip(event, '172', 172)">
+                <p>
+                  <a id="partition">
+                    <a href="#partition">
+                      <code><span>this.partition&#32;<span>predicate</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="172">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.partition&#32;<span>predicate</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        predicate
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;bool</span></code>
+                       - 
+                      The function to determine which output Observable will trigger
+ a particular observation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></span></code>
+                  </span>
+                  A tuple of Observables.  The first triggers when the predicate returns true, and
+ the second triggers when the predicate returns false.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns two observables which partition the observations of the source by 
+ the given function. The first will trigger observations for those values 
+ for which the predicate returns true. The second will trigger observations 
+ for those values where the predicate returns false. The predicate is 
+ executed once for each subscribed observer. Both also propagate all error 
+ observations arising from the source and each completes when the source 
+ completes.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  predicate
+                </span>
+                :
+                <code><span>'T&#32;->&#32;bool</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function to determine which output Observable will trigger
+ a particular observation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'T&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A tuple of Observables.  The first triggers when the predicate returns true, and
+ the second triggers when the predicate returns false.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '173', 173)" onmouseover="showTip(event, '173', 173)">
+                <p>
+                  <a id="scan">
+                    <a href="#scan">
+                      <code><span>this.scan&#32;<span><span>(<span>collector,&#32;state</span>)</span></span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="173">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.scan&#32;<span><span>(<span>collector,&#32;state</span>)</span></span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        collector
+                      </b>
+                      :
+                      <code><span>'U&#32;->&#32;'T&#32;->&#32;'U</span></code>
+                       - 
+                      The function to update the state with each observation.
+                    </span>
+                    <br/>
+                    <span>
+                      <b>
+                        state
+                      </b>
+                      :
+                      <code>'U</code>
+                       - 
+                      The initial state.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+                  </span>
+                  An Observable that triggers on the updated state values.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns an observable which, for each observer, allocates an item of state
+ and applies the given accumulating function to successive values arising from
+ the input. The returned object will trigger observations for each computed 
+ state value, excluding the initial value. The returned object propagates 
+ all errors arising from the source and completes when the source completes.
+            </p>
+            <p class="fsdocs-remarks">
+              For each observer, the registered intermediate observing object is not thread safe.
+ That is, observations arising from the source must not be triggered concurrently 
+ on different threads.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  collector
+                </span>
+                :
+                <code><span>'U&#32;->&#32;'T&#32;->&#32;'U</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function to update the state with each observation.
+                </p>
+              </dd>
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  state
+                </span>
+                :
+                <code>'U</code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The initial state.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U&gt;</span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An Observable that triggers on the updated state values.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '174', 174)" onmouseover="showTip(event, '174', 174)">
+                <p>
+                  <a id="split">
+                    <a href="#split">
+                      <code><span>this.split&#32;<span>splitter</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="174">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.split&#32;<span>splitter</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        splitter
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'U1,&#32;'U2</span>&gt;</span></span></code>
+                       - 
+                      The function that takes an observation an transforms
+ it into one of the two output Choice types.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U1&gt;</span>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U2&gt;</span></span></code>
+                  </span>
+                  A tuple of Observables.  The first triggers when <code>splitter</code> returns Choice1of2
+ and the second triggers when <code>splitter</code> returns Choice2of2.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Returns two observables which split the observations of the source by the 
+ given function. The first will trigger observations <code>x</code> for which the 
+ splitter returns <code>Choice1Of2 x</code>. The second will trigger observations 
+ <code>y</code> for which the splitter returns <code>Choice2Of2 y</code> The splitter is 
+ executed once for each subscribed observer. Both also propagate error 
+ observations arising from the source and each completes when the source 
+ completes.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  splitter
+                </span>
+                :
+                <code><span>'T&#32;->&#32;<span><a href="https://docs.microsoft.com/dotnet/api/microsoft.fsharp.core.fsharpchoice-2">Choice</a>&lt;<span>'U1,&#32;'U2</span>&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function that takes an observation an transforms
+ it into one of the two output Choice types.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><span><span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U1&gt;</span>&#32;*&#32;<span><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a>&lt;'U2&gt;</span></span></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  A tuple of Observables.  The first triggers when <code>splitter</code> returns Choice1of2
+ and the second triggers when <code>splitter</code> returns Choice2of2.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+        <tr>
+          <td class="fsdocs-member-name">
+            <div>
+              <code onmouseout="hideTip(event, '175', 175)" onmouseover="showTip(event, '175', 175)">
+                <p>
+                  <a id="subscribe">
+                    <a href="#subscribe">
+                      <code><span>this.subscribe&#32;<span>callback</span></span></code>
+                    </a>
+                  </a>
+                </p>
+              </code>
+              <div class="fsdocs-tip" id="175">
+                <div class="member-tooltip">
+                  Full Usage: 
+                  <code><span>this.subscribe&#32;<span>callback</span></span></code>
+                  <br/>
+                  <br/>
+                  Parameters: 
+                  <ul>
+                    <span>
+                      <b>
+                        callback
+                      </b>
+                      :
+                      <code><span>'T&#32;->&#32;unit</span></code>
+                       - 
+                      The function to be called on each observation.
+                    </span>
+                    <br/>
+                  </ul>
+                  <br/>
+                  <span>
+                    Returns: 
+                    <code><a href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
+                  </span>
+                  An object that will remove the callback if disposed.
+                  <br/>
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="fsdocs-xmldoc">
+            <p class="fsdocs-summary">
+              Creates an observer which subscribes to the given observable and which calls
+ the given function for each observation.
+            </p>
+            <p>
+              Extended Type: 
+              <code><a href="https://docs.microsoft.com/dotnet/api/system.iobservable-1">IObservable</a></code>
+            </p>
+            <dl class="fsdocs-params">
+              <dt class="fsdocs-param">
+                <span class="fsdocs-param-name">
+                  callback
+                </span>
+                :
+                <code><span>'T&#32;->&#32;unit</span></code>
+              </dt>
+              <dd class="fsdocs-param-docs">
+                <p>
+                  The function to be called on each observation.
+                </p>
+              </dd>
+            </dl>
+            <dl class="fsdocs-returns">
+              <dt>
+                <span class="fsdocs-return-name">
+                  Returns:
+                </span>
+                <code><a href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></code>
+              </dt>
+              <dd class="fsdocs-return-docs">
+                <p>
+                  An object that will remove the callback if disposed.
+                </p>
+              </dd>
+            </dl>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+            
+        </div>
+
+        <!-- BEGIN SEARCH BOX: this adds support for the search box -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.css" />
+        <script type="text/javascript">var fsdocs_search_baseurl = '/FSharp.Core.Fluent/'</script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.8/lunr.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/JavaScript-autoComplete/1.0.4/auto-complete.min.js"></script>
+        <script type="text/javascript" src="/FSharp.Core.Fluent/content/fsdocs-search.js"></script>
+        <!-- END SEARCH BOX: this adds support for the search box -->
+    </div>
+</body>
+
+</html>
+
